@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>IQZAD TAP & EARN</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <!-- Login Screen -->
+  <div id="loginScreen" class="center-screen">
+    <h1>IQZAD TAP & EARN</h1>
+    <button id="loginBtn">Login with Google</button>
+  </div>
+
+  <!-- Main App -->
+  <div id="app" style="display:none;">
+    <header>
+      <h2>IQZAD TAP & EARN</h2>
+      <p>افراد ٹیپ اور کمائی</p>
+      <span class="tag">✅ Halal Crypto Game</span>
+    </header>
+
+    <!-- Stats -->
+    <div class="stats">
+      <div class="card"><span id="tokens">0</span><br>IQZ Tokens</div>
+      <div class="card"><span id="energy">2500</span><br>Energy</div>
+      <div class="card"><span id="timeLeft">60:00</span><br>Time Left</div>
+    </div>
+
+    <p id="dailyTime">⏰ Daily Play Time: 00:00 / 01:00:00</p>
+
+    <!-- Tap Button -->
+    <button id="tapBtn" class="tap-btn">
+      TAP TO EARN<br>کمانے کے لئے ٹیپ کریں<br>+1 IQZ
+    </button>
+    <div class="progress">
+      <div id="energyBar" class="progress-bar"></div>
+    </div>
+    <p><span id="energyValue">2500</span> / 2500 توانائی کی سطح</p>
+
+    <!-- Navigation -->
+    <nav>
+      <button onclick="showTab('withdraw')">Withdraw</button>
+      <button onclick="showTab('invite')">Invite</button>
+      <button onclick="showTab('social')">Social</button>
+    </nav>
+
+    <!-- Withdraw Screen -->
+    <div id="withdraw" class="tab">
+      <h3>Withdraw</h3>
+      <p>Withdrawals will be available after 15 days.</p>
+      <p>$3 gas fee applies (added to liquidity pool).</p>
+      <button onclick="withdrawRequest()">Withdraw via Google Form</button>
+    </div>
+
+    <!-- Invite Screen -->
+    <div id="invite" class="tab">
+      <h3>Invite & Earn</h3>
+      <p>Your referral link:</p>
+      <input type="text" id="refLink" readonly />
+      <button onclick="copyReferral()">Copy Link</button>
+      <p>Get 100 points for each friend who joins (both inviter & invitee).</p>
+    </div>
+
+    <!-- Social Screen -->
+    <div id="social" class="tab">
+      <h3>Social Media Tasks</h3>
+      <button onclick="completeTask('Follow')">Follow on Instagram (+100)</button>
+      <button onclick="completeTask('Like')">Like a Post (+100)</button>
+      <button onclick="completeTask('Watch')">Watch a Video (+100)</button>
+    </div>
+  </div>
+
+  <!-- Firebase SDKs -->
+  <script type="module" src="script.js"></script>
+</body>
+</html>
