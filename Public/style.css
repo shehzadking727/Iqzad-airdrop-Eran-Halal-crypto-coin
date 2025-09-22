@@ -1,0 +1,84 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background: #f0fff4;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background: #d1f7d1;
+  padding: 15px;
+}
+
+.tag {
+  background: #e6ffe6;
+  padding: 5px 10px;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-around;
+  margin: 15px;
+}
+
+.card {
+  background: white;
+  border-radius: 12px;
+  padding: 10px;
+  width: 30%;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.tap-btn {
+  margin: 15px;
+  padding: 30px;
+  border-radius: 50%;
+  font-size: 18px;
+  border: none;
+  background: green;
+  color: white;
+}
+
+.progress {
+  background: #ddd;
+  border-radius: 10px;
+  margin: 10px;
+  height: 20px;
+}
+
+.progress-bar {
+  background: linear-gradient(to right, green, yellow);
+  height: 100%;
+  border-radius: 10px;
+  width: 100%;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+nav button {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  background: #c7f7c7;
+  font-size: 16px;
+}
+
+.tab {
+  display: none;
+  padding: 20px;
+}
+
+.center-screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
